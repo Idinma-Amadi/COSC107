@@ -1,9 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <title>
-        <head>countdown timer</head>
-    </title>
-    <body class="bdy">
+    <head>
+        <title>countdown timer</title>
         <link rel="stylesheet" href="css/style.css">
-    </body>
+    </head>
+   <body>
+    <section >
+        <div class="maindiv">
+            <div class="image">
+                <img src="iphone.jfif" alt="iphone">
+            </div>
+
+            <div class="book">
+                <bold>
+                <h2>NEW IPHONE GIVE AWAY</h2>
+                <p class="giveaway">Give Away Ends On Wednesday, 6 March 2024 At 11:30am
+
+                </p>
+                <p class="lorem">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Eius tenetur sunt libero repudiandae cupiditate,
+                     numquam molestias sed ullam asperiores nam. Accusamus non enim impedit,
+                      explicabo fugiat sed culpa temporibus labore!
+                </p>
+                <div class="launchtime">
+
+                <div>
+                    <p id="days">00</p>
+                    <span>DAYS</span>
+                </div>
+
+                <div>
+                    <p id="hours">00</p>
+                    <span>HOURS</span>
+                </div>
+
+                <div>
+                    <p id="minutes">00</p>
+                    <span>MINUTES</span>
+                </div>
+
+                <div>
+                    <p id="seconds">00</p>
+                    <span>SECONDS</span>
+                </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <script>
+        
+
+    var countDownDate = new Date("March 16, 2024 00:00:00").getTime();
+    var x = setInterval(function(){
+     var now = new Date().getTime();
+     var distance = countDownDate - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+     var hours = Math.floor ((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+     document.getElementById("days").innerHTML = days;
+     document.getElementById("hours").innerHTML = hours;
+     document.getElementById("minutes").innerHTML = minutes;
+     document.getElementById("seconds").innerHTML = seconds;
+    },1000)
+
+    if(distance < 0 ){
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+     document.getElementById("hours").innerHTML = "00";
+     document.getElementById("minutes").innerHTML = "00";
+     document.getElementById("seconds").innerHTML = "00";
+
+    }
+
+    </script>
+   </body>
 </html>

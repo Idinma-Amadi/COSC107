@@ -1,0 +1,70 @@
+*{
+    font-family: sans-serif;
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+    border: 100px color( black);
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 70px;
+    margin: 100px;
+    
+}
+.maindiv{
+    width: 87vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 50px color(rgb(103, 102, 102));
+}
+.image{
+    width: 33vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+img{
+    width: 40vw;
+    height: 60vh;
+    border-radius: 20px;
+}
+.book{
+    width: 38vw;
+    height: 20vw;
+    
+}
+h2{
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    
+}
+.giveaway{
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+.lorem{
+    line-height: 23px;
+    margin-top: 15px;
+}
+body{
+    color: white;
+    background-color: rgb(78, 73, 73);
+    
+}
+.launchtime{
+    display: flex;
+}
+.launchtime div{
+    flex-basis: 100px;
+    
+}
+.launchtime div p{
+    font-size: 60px;
+    margin-bottom: -5px;
+}
